@@ -1,0 +1,30 @@
+{
+  "name": "crm09082021",
+  "version": "1.0.0",
+  "description": "fullstack  app with angular and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "server": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leon3854/MEAN090821.git"
+  },
+  "keywords": [
+    "express",
+    "angular"
+  ],
+  "author": "Leon3854",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leon3854/MEAN090821/issues"
+  },
+  "homepage": "https://github.com/Leon3854/MEAN090821#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
