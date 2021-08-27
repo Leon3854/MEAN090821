@@ -1,3 +1,6 @@
+const Position = require('../models/Position');
+const errorHandler = require('../');
+
 module.exports.getByCategoryId = function(req, res) {}
 module.exports.create = function(req, res) {}
 module.exports.remove = function(req, res) {}
