@@ -1,7 +1,10 @@
-const User = require('../models/User');
+
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+
+const User = require('../models/User');
 const keys = require('../config/keys');
+const errorHandler = require('../utils/errorHandler');
 
 module.exports.login = async function(req, res) {
   const candidate = await User.findOne({email: req.body.email});
@@ -19,7 +22,7 @@ module.exports.login = async function(req, res) {
       })
     } else {
       // Пароли совпали
-    res.status(409).json({
+    res.status(401).json({
       message: 'Пароли не совпали. Попробуйте ещё раз'
     })
     }
